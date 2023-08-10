@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      #provinces,
+      #districts,
+      #wards {
+        color: blue;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        border-radius: 3px;
+        margin-right: 20px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <select id="provinces" onchange="getProvinces(event)">
+      <option value="">-- select provinces --</option>
+    </select>
+    <select id="districts" onchange="getDistricts(event)">
+      <option value="">-- select districts --</option>
+    </select>
+    <select id="wards">
+      <option value="">-- select wards --</option>
+    </select>
+    <script src="./index.js"></script>
+  </body>
+</html>
