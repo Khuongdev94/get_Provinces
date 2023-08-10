@@ -1,6 +1,7 @@
 fetch("https://vn-public-apis.fpo.vn/provinces/getAll?limit=-1")
   .then((response) => response.json())
   .then((data) => {
+    console.log(data);
     let provinces = data.data.data;
     provinces.map(
       (value) =>
